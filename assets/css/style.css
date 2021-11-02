@@ -305,7 +305,7 @@ span {
 
 
 .navbar-brand .image {
-    max-width: 150px;
+    max-width: 110px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -318,6 +318,7 @@ span {
         padding: 5px 12px;
         background-color: #fff;
         box-shadow: 0 15px 20px 0 rgb(0 0 0 / 10%);
+        font-weight: bold;
     }
 }
 
@@ -340,12 +341,13 @@ span {
     padding: 10px 0;
     font-size: 18px;
     font-weight: 400;
-    color: #38424d;
+    color: #223F76;
+    font-weight: bold;
 }
 
 .navbar-nav .nav-item .nav-link.active,
 .navbar-nav .nav-item .nav-link:hover {
-    color: #ff846f;
+    color: #87898a;
 }
 
 .navbar-nav .nav-item .nav-link::before {
@@ -394,7 +396,7 @@ span {
     left: 130px;
     top: 20%;
     border-radius: 50%;
-    background: #637ae4;
+    background: #223F76;
     animation: animation-1 2s linear infinite;
 }
 
@@ -404,7 +406,7 @@ span {
     left: 150px;
     bottom: 40px;
     border-radius: 50%;
-    background: #0898e7;
+    background: #223F76;
     animation: animation-1 2s linear infinite;
 }
 
@@ -414,7 +416,7 @@ span {
     left: 26px;
     bottom: 25%;
     border-radius: 50%;
-    background: #ff846f;
+    background: #87898a;
     animation: animation-1 2s linear infinite;
 }
 
@@ -424,7 +426,7 @@ span {
     left: 40%;
     top: 175px;
     border-radius: 50%;
-    background: #4ebaf5;
+    background: #EEA47FFF;
     animation: animation-1 2s linear infinite;
 }
 
@@ -434,7 +436,7 @@ span {
     left: 50%;
     bottom: 20%;
     border-radius: 50%;
-    background: #ff5b56;
+    background: #EEA47FFF;
     animation: animation-1 2s linear infinite;
 }
 
@@ -444,7 +446,7 @@ span {
     left: 45%;
     bottom: 70%;
     border-radius: 50%;
-    background: #4ebaf5;
+    background: #EEA47FFF;
     animation: animation-1 2s linear infinite;
 }
 
@@ -549,7 +551,7 @@ span {
 .feature-section .single-feature {
     padding: 30px;
     text-align: center;
-    box-shadow: 0 15px 17px 0 rgb(154 154 154 / 16%);
+    box-shadow: 0 15px 17px 20px rgb(154 154 154 / 16%);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -579,6 +581,10 @@ span {
 
 .feature-section .single-feature .icon.color-3 {
     background-color: #ff92a5;
+}
+
+.feature-section .single-feature .icon.color-4 {
+    background-color: #EEA47FFF;
 }
 
 .feature-section .single-feature .icon::after {
@@ -678,10 +684,35 @@ span {
 .about-content .main-btn {
     margin-top: 40px;
 }
+input[type=text], input[type=submit], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #a3bdff;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
 
 /* --------- Testimonial css ---------- */
 
 .testimonial-section {
+    margin-top: 40px;
     padding: 100px 0;
     background-color: #a3bdff;
 }
